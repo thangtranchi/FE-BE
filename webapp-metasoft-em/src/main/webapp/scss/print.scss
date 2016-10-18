@@ -1,0 +1,18 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    width: 100% !important;
+}
+
+td.hidden-xs , th.hidden-xs { display: table-cell !important; }
+td, th { padding: 1% 0.5% !important; }
+.secondary-text { display: none; }
+
+
+/* typography */
+h1 { font-size: 22px; }
+h2 { font-size: 18px; }
+h3 { font-size: 16px; }

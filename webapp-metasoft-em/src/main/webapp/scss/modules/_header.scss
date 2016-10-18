@@ -1,0 +1,85 @@
+/* Header
+-------------------------------------------------- */
+header {
+
+
+    .container {
+        position: relative;
+        height: 90px;
+        .logo {
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            width: 160px;
+            height: 0; overflow: hidden; padding-top: 40px;
+            margin: -20px 0 0 0;
+        }
+
+        /* Account Summary */
+        #account-summary {
+                position: absolute;
+                top: 50%;
+                right: 20px;
+                width: 425px;
+                max-width: 50%;
+                margin: -36px 0 0 0;
+
+                .btn {
+                    margin-top: 4px;
+                }
+
+                .fa {
+                    margin-top: 2px;
+                }
+        }
+
+    }
+
+}
+
+/* Media queries
+-------------------------------------------------- */
+
+/* Extra small devices (phones, less than 768px) */
+@media (max-width: $screen-sm-min) {
+    header {
+
+        margin-top: -80px;
+        position: fixed;
+        z-index: 999999;
+        height: 60px;
+
+        .container {
+
+            height: 60px;
+            .logo {
+                background-size: 100px 25px;
+                margin: -12px 0 0 0;
+                width: 100px;
+                 height: 0; overflow: hidden; padding-top: 25px;
+            }
+
+        }
+
+    }
+
+    .navbar {
+        z-index: 999998;
+    }
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm-min) {
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md-min) {
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: $screen-lg-min) {
+
+}

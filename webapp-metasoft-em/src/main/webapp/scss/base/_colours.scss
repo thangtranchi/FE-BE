@@ -1,0 +1,32 @@
+$white: #FFFFFF;
+
+$primary-color: #0099D3;
+$secondary-color: #1B5067;
+
+$light-grey: #F8F9FA;
+$mid-grey: #C4C4C4;
+$dark-grey: #999999;
+$darker-grey: #333;
+
+$success-color: #419641;
+$success-color: #419641;
+
+.secondary-text {
+ color: $dark-grey;
+}
+
+.panel-primary .secondary-text {
+    color: $white;
+}
+
+
+/* Text colours */
+
+.primary-text { color: $primary-color; }
+.inverse-text { color: $white; }
+.secondary-text { color: $dark-grey; }
+
+.txt-success { color: #3c763d; }
+.txt-warning { color: #D9A300; }
+.txt-danger { color: #a94442; }
+.txt-info { color: #31708f; }

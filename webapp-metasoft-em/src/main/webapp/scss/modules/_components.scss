@@ -1,0 +1,250 @@
+/* Components
+-------------------------------------------------- */
+
+/* Dropdowns */
+
+.dropdown{
+    &.right-align {
+        .dropdown-menu {
+            right: 0px;
+            left: auto;
+        }
+    }
+}
+
+/* Modals */
+.modal {
+    position: fixed;
+    top: 3%;
+    right: 3%;
+    left: 3%;
+    width: auto;
+    margin: 0;
+}
+.modal-body {
+    height: 60%;
+    max-height: 350px;
+    padding: 15px;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+ }
+
+
+
+
+/* Media List */
+.media-list {
+    .media {
+        p.date {
+            background: $secondary-color;
+            color: $white;
+            position: relative;
+            display: inline-block;
+            padding: 3px 0px;
+            min-width: 60px;
+            text-align: center;
+            text-transform: uppercase;
+
+            &:after {
+                content: " ";
+                position: absolute;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 4px 28px 0 28px;
+                border-color: $secondary-color transparent transparent transparent;
+                bottom: -4px;
+                left: 0;
+                margin: 0 0 0 0;
+            }
+        }
+    }
+}
+
+/* Alerts */
+    .alert-system-wide {
+        min-height: 211px;
+        display: table;
+        >.row {
+            display: table-cell;
+            vertical-align: middle;
+        }
+    }
+
+    .alert-warning {
+        background-image: none;
+        filter: none;
+        background-color: #FBF6E5;
+        border-color: #D9A300;
+        color: #2C2B31;
+    }
+
+
+/* Page header */
+    .page-header {
+        margin: 0 0 20px;
+    }
+
+/* Panels */
+
+    #dashboard-discussion {
+        h3 {
+            margin-top: 0px;
+        }
+    }
+
+    .panel-primary {
+        border-color: $primary-color;
+        background-color: $primary-color;
+        color: $white;
+    }
+
+
+    .panel-shaded {
+        border-color: $mid-grey;
+        background-color: $light-grey;
+    }
+
+    .panel-home {
+        min-height: 355px;
+
+        .btn {
+            margin-bottom: 20px;
+        }
+    }
+
+    .panel-dashboard {
+        min-height: 205px;
+    }
+
+    .panel-chart {
+
+    }
+
+    /* Panel Customisations */
+    #dashboard-my-details{
+        background-image: url('../img/dashboard-icon-my-details.png');
+        background-position: -30px 20px;
+        background-repeat: no-repeat;
+
+    }
+    #dashboard-performance {
+        background-image: url('../img/dashboard-icon-performance.png');
+        background-position: -50px 30px;
+        background-repeat: no-repeat;
+    }
+    #dashboard-tools {
+        background-image: url('../img/dashboard-icon-tools.png');
+        background-position: -50px 30px;
+        background-repeat: no-repeat;
+    }
+    #dashboard-info {
+        background-image: url('../img/dashboard-icon-info.png');
+        background-position: -50px 30px;
+        background-repeat: no-repeat;
+    }
+    #dashboard-discussion {
+        background-image: url('../img/dashboard-icon-quotes.png');
+        background-position: right -30px center;
+        background-repeat: no-repeat;
+    }
+
+
+
+/* Wells */
+    .well.well-transparent {
+        background: transparent;
+        border-color: transparent;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+
+/* Breadcrumb */
+    .breadcrumb {
+        background: none;
+        padding: 8px 0;
+
+        >li+li:before {
+            font-family:'FontAwesome';
+            padding: 0 15px;
+            color: #ccc;
+            content:"\f054";
+            font-size: 0.8em;
+        }
+
+    }
+
+/* Tabs */
+    .tab-pane {
+        padding: 20px;
+    }
+
+/* Rows */
+    .btn-row { margin-bottom: 20px; }
+
+
+
+/* Media queries
+-------------------------------------------------- */
+
+/* Extra small devices (phones, less than 768px) */
+@media (max-width: $screen-sm-min) {
+
+    .panel-dashboard {
+        min-height: 160px;
+    }
+
+    /* Panel Customisations */
+    #dashboard-my-details, #dashboard-performance, #dashboard-tools, #dashboard-info, #dashboard-discussion  {
+        background-image: none;
+
+    }
+
+    .modal-dialog {
+        margin-top: 80px;
+    }
+
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm-min) {
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md-min) {
+    #dashboard-my-details{
+       background-position: -5px 20px;
+
+    }
+    #dashboard-performance {
+        background-position: -10px 30px;
+    }
+    #dashboard-tools {
+        background-position: -20px 30px;
+    }
+    #dashboard-info {
+        background-position: -20px 30px;
+    }
+    #dashboard-discussion {
+        background-position: right 40px center;
+    }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: $screen-lg-min) {
+    #dashboard-my-details{
+       background-position: 10px 20px;
+
+    }
+    #dashboard-performance {
+        background-position: 20px 30px;
+    }
+    #dashboard-tools {
+        background-position: 10px 30px;
+    }
+    #dashboard-info {
+        background-position: 20px 30px;
+    }
+
+}

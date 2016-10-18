@@ -1,0 +1,249 @@
+/* Navbar
+-------------------------------------------------- */
+
+
+
+.navbar {
+    border: none;
+    .container {
+
+        .navbar-header {
+            .navmenu-brand {
+                display: none;
+            }
+        }
+
+        .navbar-nav {
+            > li {
+                > a {
+                    text-transform: uppercase;
+                }
+            }
+        }
+
+    }
+
+  &.navbar-inverse {
+
+    background: $primary-color;
+
+
+    .navbar-toggle {
+        border-color: transparent;
+
+        &:hover, &:active {
+            background: $primary-color;
+        }
+    }
+
+    .navbar-collapse {
+        border: none;
+        li{
+            a {
+                color: $dark-grey;
+            }
+        }
+    }
+
+    ul.navbar-nav {
+        > li {
+            position: relative;
+            background: transparent;
+
+            >a {
+                color: $white;
+
+                &.external-highlighted {
+                    background: $secondary-color;
+                    margin: 4px 0;
+                    padding-top: 8px;
+                    padding-bottom: 4px;
+                    border-radius: 4px;
+                }
+
+            }
+
+            &:hover {
+
+                :after {
+                    content: "";
+                    width: 0;
+                    height: 0;
+                    border-style: solid;
+                    border-width: 8px 10px 0 10px;
+                    border-color: white transparent transparent transparent;
+                    position: absolute;
+                    top: 0;
+                    left: 50%;
+                    margin: 0 0 0 -10px;
+                }
+            }
+        }
+
+        > li.active, > li.open {
+
+            > a, > a:hover, > a:focus  {
+                color: $white;
+                background: none;
+                box-shadow: none;
+            }
+        }
+
+    }
+  }
+
+  &.navbar-dark {
+
+      background: $darker-grey;
+
+
+
+
+      .navbar-nav {
+        > li {
+          > a {
+            color: $white;
+            text-transform: uppercase;
+            &:hover {
+              color: $light-grey;
+              background: transparent;
+            }
+          }
+
+          &.active, &.open,&:hover {
+            position: relative;
+            background: transparent;
+            :after {
+                content: "";
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 8px 10px 0 10px;
+                border-color: $white transparent transparent transparent;
+                position: absolute;
+                top: -1px;
+                left: 50%;
+                margin: 0 0 0 -10px;
+            }
+            > a {
+              background: transparent;
+              box-shadow: none;
+            }
+          }
+
+        }
+      }
+    }
+
+
+}
+
+
+/* Create a medium height at 40px */
+.navbar-md {min-height:40px}
+.navbar-md .navbar-brand,
+.navbar-md .navbar-nav>li>a {padding-top:10px; padding-bottom:10px}
+.navbar-md .navbar-brand {height: 40px}
+.navbar-md .navbar-toggle {margin: 6px 12px 6px 0px; padding: 6px 7px 6px 7px;}
+.navbar-md .navbar-toggle .icon-bar {width: 19px;}
+
+
+/* Create a small height at 30px */
+.navbar-sm {min-height:30px}
+.navbar-sm .navbar-brand,
+.navbar-sm .navbar-nav>li>a {padding-top:5px; padding-bottom:5px}
+.navbar-sm .navbar-brand {height: 30px}
+.navbar-sm .navbar-toggle {margin: 3px 9px 3px 0px; padding: 4px 4px 4px 4px;}
+.navbar-sm .navbar-toggle .icon-bar {width: 16px;}
+
+
+/* Tabs */
+.nav-tabs {
+    >li {
+        >a {
+            padding: 10px 65px;
+            text-transform: uppercase;
+            color: $darker-grey;
+        }
+    }
+}
+
+/* Media queries
+-------------------------------------------------- */
+
+/* Extra small devices (phones, less than 768px) */
+@media (max-width: $screen-sm-min) {
+
+      .navbar {
+        &.navbar-inverse {
+          .navbar-collapse {
+            border: 1px solid $primary-color;
+
+            li, li.active, li.open {
+              .dropdown-menu {
+
+              }
+              a {
+
+              }
+            }
+          }
+        }
+
+        .container {
+
+            .navbar-header {
+                .navmenu-brand {
+                    display: block;
+                    float: left;
+                     width: 183px;
+                      height: 40px;
+                      background-size: 183px 40px;
+                      margin-top: 10px;
+                      margin-left: 15px;
+                }
+
+                .navbar-toggle {
+                    margin: 13px 15px 13px 0;
+                }
+            }
+
+          }
+
+
+        #trackingForm {
+          label {
+            color: $primary-color;
+          }
+        }
+      }
+
+    /* Tabs */
+    .nav-tabs {
+        >li {
+            >a {
+                padding: 10px 15px;
+            }
+        }
+    }
+
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm-min) {
+    .navbar-fixed-top
+    {
+        position: relative;
+        top: auto;
+    }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md-min) {
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: $screen-lg-min) {
+
+}

@@ -1,0 +1,9 @@
+DEPARTMENT_ID,DEPARTMENT_NAME,MANAGER_NAME,ADDITIONAL_EMPLOYEEA,IS_ROOT,PARENT_NAME
+19,Recruitment,Louis De Funes,dump,FALSE,HR
+20,Business Development,PhongTran,dump,FALSE,General
+21,C&B,RowanAtkinson,dump,FALSE,HR
+22,Payment,Mai Pham,dump,FALSE,Finance
+23,Admin,Mai Pham,dump,FALSE,HR
+24,Training,MarkZuckerberg,dump,FALSE,Technical
+25,IT Support,HuyTran,dump,FALSE,Technical
+26,Accounting,,dump,TRUE,

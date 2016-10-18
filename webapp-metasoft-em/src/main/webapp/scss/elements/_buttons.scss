@@ -1,0 +1,69 @@
+/* Buttons
+-------------------------------------------------- */
+.btn {
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 8px 12px 4px 12px;
+
+}
+
+.btn-inverse {
+    border: 2px solid $white;
+    background: $primary-color;;
+    box-sizing: border-box;
+    &:hover, &:active, &:focus {
+        color: $light-grey;
+        background: $secondary-color;
+    }
+}
+.btn-primary {
+    border: none;
+    background: $primary-color;
+
+    &:hover, &:active, &:focus {
+        color: $light-grey;
+        background: $secondary-color;
+    }
+}
+.btn-tertiary {
+    border: none;
+    background: $dark-grey;
+    color: $white;
+    &:hover, &:active, &:focus {
+        color: $light-grey;
+        background: $secondary-color;
+    }
+}
+.btn-long {
+    width: 235px;
+    max-width: 100%;
+    text-align: left;
+    padding: 10px 12px 8px 12px;
+    .icon {
+        float: right;
+        line-height: 20px;
+    }
+}
+
+/* Media queries
+-------------------------------------------------- */
+
+/* Extra small devices (phones, less than 768px) */
+@media (max-width: $screen-sm-min) {
+
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm-min) {
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md-min) {
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: $screen-lg-min) {
+
+}

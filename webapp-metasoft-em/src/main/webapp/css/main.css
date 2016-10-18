@@ -1,0 +1,40 @@
+/* ==========================================================================
+   Author's custom styles
+========================================================================== */
+#site-wrapper {
+  background: none !important;
+  min-height: 100%;
+  position: relative;
+}
+
+div.ui-datepicker-div {
+    font-size: 12px;
+}
+
+.data-cell .btn {
+    padding: 2px 4px 1px;
+}
+
+.width-15pc {
+    width: 15%;
+}
+.width-10pc {
+    width: 10%;
+}
+div.narrow-modal {
+    width: 300px;
+}
+.error-margin {
+    margin: 0, 30px;	
+}
+.error-input{
+    border: 1px solid red;
+}
+
+.container .logo {
+    float: left;
+}
+.form-control[disabled], input[disabled], select[disabled] {
+	cursor: default !important;
+}
+ 
